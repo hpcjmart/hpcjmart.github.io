@@ -19,11 +19,11 @@ El proceso de creación de un cluster se divide en cuatro fases:
 
 Lo primero de todo, si estamos en modo linea de comandos, es decir, nos hemos conectado a la máquina de control del cluster de pruebas del Departamento de Informática, es cargar las credenciales:
 
->hpcjmart@testcontroller:~$ source hpcjmart-rc.sh 
-
->Please enter your OpenStack Password for project hpcjmart as user hpcjmart: 
-
->hpcjmart@testcontroller:~$ 
+<pre>
+hpcjmart@testcontroller:~$ source hpcjmart-rc.sh 
+Please enter your OpenStack Password for project hpcjmart as user hpcjmart: 
+hpcjmart@testcontroller:~$ 
+</pre>
 
 
 ### Template de los nodos
