@@ -33,7 +33,7 @@ Podemos encontrar mas imagenes preconfiguradas e instaladas en la dirección [ht
 
 Para poder avanzar de manera mas rápida, la imagen ya se encuentra cargada en el repositorio de OpenStack. Lo podemos ver en la opcion del menu horizon:
 
-![Proyecto-Compute-Imagenes](https://hpcjmart.github.io/images/imagenes.png)
+![Proyecto Compute Imagenes](https://hpcjmart.github.io/images/imagenes.png)
 
 
 ### Template de los nodos
