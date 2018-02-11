@@ -17,13 +17,23 @@ El proceso de creación de un cluster se divide en cuatro fases:
 
 ### Registro de imágenes
 
-Lo primero de todo, si estamos en modo linea de comandos, es decir, nos hemos conectado a la máquina de control del cluster de pruebas del Departamento de Informática, es cargar las credenciales:
+Lo primero de todo, si estamos en modo linea de comandos, es decir, nos hemos conectado a la máquina de control del cluster de pruebas del Departamento de Informática a traves de ssh, es cargar las credenciales:
 
 <pre>
 hpcjmart@testcontroller:~$ source hpcjmart-rc.sh 
 Please enter your OpenStack Password for project hpcjmart as user hpcjmart: 
 hpcjmart@testcontroller:~$ 
 </pre>
+
+You will need to upload a virtual machine image to the OpenStack Image service. You can download pre-built images with vanilla Apache Hadoop installed, or build the images yourself. This guide uses the latest available Ubuntu upstream image, referred to as sahara-vanilla-latest-ubuntu.qcow2 and the latest version of vanilla plugin as an example. Sample images are available here:
+
+Necesitamos ahora, cargar la imagen de la máquina virtual con el servicio de imagenes de Openstack. Podemos descargar una imagen preconfigurada con el vanilla Apache haddop instalado o bien, podemo soptar por contruir nosotros mismos las imágenes. Para este ejemplo vamos a usar la imagen [sahara-vanilla-latest-ubuntu.qcow2](http://sahara-files.mirantis.com/images/upstream/ocata/sahara-ocata-vanilla-2.7.1-ubuntu.qcow2). 
+
+Podemos encontrar mas imagenes preconfiguradas e instaladas en la dirección [http://sahara-files.mirantis.com/images/upstream/ocata/](http://sahara-files.mirantis.com/images/upstream/ocata/)
+
+Para poder avanzar de manera mas rápida, la imagen ya se encuentra cargada en el repositorio de OpenStack. Lo podemos ver en la opcion del menu horizon:
+
+![Proyecto|Compute|Imagenes](https://hpcjmart.github.io/images/imagenes.png)
 
 
 ### Template de los nodos
