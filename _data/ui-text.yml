@@ -50,7 +50,7 @@ en-AU:
 
 # Spanish
 # --------------
-es: &DEFAULT_ES
+es-ES: &DEFAULT_ES
   page                       : "Página"
   pagination_previous        : "Anterior"
   pagination_next            : "Siguiente"
@@ -87,7 +87,7 @@ es: &DEFAULT_ES
   comment_success_msg        :
   comment_error_msg          :
   loading_label              :
-es-ES:
+es:
   <<: *DEFAULT_ES
 es-CO:
   <<: *DEFAULT_ES
