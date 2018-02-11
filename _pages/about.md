@@ -8,6 +8,10 @@ redirect_from:
   - /about.html
 ---
 
+Sobre mi
+========
+Aqui se debe poner algo sobre mi
+
 
 A data-driven personal website
 ======
