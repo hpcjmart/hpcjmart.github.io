@@ -4,12 +4,18 @@ layout: archive
 permalink: /SeminarioCloudDI/
 ---
 
-#CloudDI: Sahara, Magnum y Manila
+# CloudDI: Sahara, Magnum y Manila
 
-##Sahara
+## Sahara
 
 El proyecto Sahara nos proporciona de una manera sencilla, aprovisionar un cluster de computo intensivo, Apache Hadoop, Apache Spark y Apache Storm sobre OpenStack
 
+El proceso de creación de un cluster se divide en cuatro fases:
+
+* Registro de imagenes
+* Creación del template de los nodos
+* Creación del template del cluster
+* Creación del cluster
 
 
 ##Magnum
