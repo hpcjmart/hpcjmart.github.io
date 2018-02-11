@@ -4,8 +4,6 @@ layout: archive
 permalink: /SeminarioCloudDI/
 ---
 
-# CloudDI: Sahara, Magnum y Manila
-
 ## Sahara
 
 El proyecto Sahara nos proporciona de una manera sencilla, aprovisionar un cluster de computo intensivo, Apache Hadoop, Apache Spark y Apache Storm sobre OpenStack
@@ -17,26 +15,26 @@ El proceso de creación de un cluster se divide en cuatro fases:
 * Creación del template del cluster
 * Creación del cluster
 
+### Registro de imágenes
 
-##Magnum
+Lo primero de todo, si estamos en modo linea de comandos, es decir, nos hemos conectado a la máquina de control del cluster de pruebas del Departamento de Informática, es cargar las credenciales:
 
-##Manila
+>hpcjmart@testcontroller:~$ source hpcjmart-rc.sh 
+>Please enter your OpenStack Password for project hpcjmart as user hpcjmart: 
+>hpcjmart@testcontroller:~$ 
 
 
+### Template de los nodos
 
-A variety of common markup showing how the theme styles them.
+### Template del cluster
 
-# Header one
+### Creación del cluster
 
-## Header two
 
-### Header three
+## Magnum
 
-#### Header four
+## Manila
 
-##### Header five
-
-###### Header six
 
 ## Blockquotes
 
