@@ -4,6 +4,20 @@ layout: archive
 permalink: /SeminarioCloudDI/
 ---
 
+#CloudDI: Sahara, Magnum y Manila
+
+##Sahara
+
+El proyecto Sahara nos proporciona de una manera sencilla, aprovisionar un cluster de computo intensivo, Apache Hadoop, Apache Spark y Apache Storm sobre OpenStack
+
+
+
+##Magnum
+
+##Manila
+
+
+
 A variety of common markup showing how the theme styles them.
 
 # Header one
