@@ -1,7 +1,7 @@
 ---
-title: "Ejemplos de CloudDI: Sahara, Magnum y Manila"
+title: "CloudDI: Sahara, Magnum y Manila"
 layout: archive
-permalink: /2018-02-01-tutorial-1/
+permalink: /SeminarioCloudDI/
 ---
 
 A variety of common markup showing how the theme styles them.
