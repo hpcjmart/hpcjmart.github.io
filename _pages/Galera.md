@@ -1,7 +1,7 @@
 ---
 title: "CloudDI: Sahara, Magnum y Manila"
 layout: archive
-permalink: /SeminarioCloudDI/
+permalink: /Galera/
 ---
 
 ## Sahara
