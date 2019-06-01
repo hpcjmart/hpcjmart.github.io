@@ -6,6 +6,8 @@ permalink: /SeminarioCloudDI/
 
 ## Sahara
 
+Cambio Algo
+
 El proyecto Sahara nos proporciona de una manera sencilla, aprovisionar un cluster de computo intensivo, Apache Hadoop, Apache Spark y Apache Storm sobre OpenStack
 
 El proceso de creación de un cluster se divide en cuatro fases:
