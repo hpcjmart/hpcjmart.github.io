@@ -1,12 +1,12 @@
 # main links links
 main:
-  - title: "Publications"
+  - title: "Publicaciones"
     url: /publications/
 
-  - title: "Talks"
+  - title: "Seminarios"
     url: /talks/    
 
-  - title: "Teaching"
+  - title: "Docencia"
     url: /teaching/    
     
   - title: "Blog Posts"
