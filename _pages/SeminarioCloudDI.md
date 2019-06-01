@@ -195,7 +195,7 @@ Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should 
 
 This allows you to denote <var>variables</var>.
 
-{% include base_path %}
-{% for post in site.pages %}
-{% include archive-single.html %}
-{% endfor %}
+[comment]: <> {% include base_path %}
+[comment]: <> {% for post in site.pages %}
+[comment]: <> {% include archive-single.html %}
+[comment]: <> {% endfor %}
