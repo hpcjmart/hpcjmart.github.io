@@ -4,12 +4,11 @@ permalink: /posts/:title
 rdiscount:
   extensions: [smart]
 exclude: [ Gemfile, Gemfile.lock, gems, _assets, bower_components ]
-title : Manuel Torres - GitHub Pages
-production_url : http://ualmtorres.github.com
+title : Jose A. Martinez - GitHub Pages
+production_url : http://hpcjmart.github.com
 description: "Througths, flamewars, utilities, tutorials, codes, projects and other things by Carlos Alexandro Becker."
-disqus_shortname: ualmtorres
+disqus_shortname: hpcjmart
 author :
-  name : Manuel Torres
-  github : ualmtorres
-  twitter : ualmtorres
-  email: mtorres@ual.es
+  name : Jose A. Martinez
+  github : hpcjmart
+  email: jmartine@ual.es
