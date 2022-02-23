@@ -1,28 +1,103 @@
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+Up
+--------------
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+Up is a clean and beautiful [Bootstrap](http://getbootstrap.com) based layout
+for [Jekyll](https://github.com/mojombo/jekyll).
 
-# Instructions
+This is designed to be an easy layout to modify for your own blog. It is
+based on [zachholman's](http://zachholman.com/) blog themes: the "old" one, now
+opensourced as [left](http://github.com/holman/left), and also in his actual
+theme, that's not opensource (I believe), but I stole some ideas anyway. I also
+took something from [jekyll-bootstrap](https://github.com/plusjade/jekyll-bootstrap),
+and, of course, I'm using [bootstrap](https://github.com/twitter/bootstrap) as
+a base for whole thing.
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+![Up 2](http://f.cl.ly/items/1k0B3m21451e0G1i3u0F/up_v2.png)
 
-See more info at https://academicpages.github.io/
+## Installation
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll serve` to generate the HTML and serve it from localhost:4000
+- [Fork this repository](https://github.com/caarlos0/up/fork)
+- Rename it to `YOUR-USER.github.io`
+- Clone it: `git clone https://github.com/YOUR-USER/YOUR-USER.github.io`
+- With Ruby, bundler, Node.js and NPM previously installed, run the init script
+`bundle && rake init`;
+- Start it up in watch mode: `foreman start -f Procfile.dev`.
 
-# Changelog -- bugfixes and enhancements
+You should have a server up and running locally at <http://localhost:4000>.
 
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
+## Customization
 
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+Next you'll want to change a few things. The list of files you may want to
+change is the following:
+
+- [_config.yml](https://github.com/caarlos0/up/blob/gh-pages/_config.yml): Put
+your config there, almost everything will be up and running.
+- [about/index.html](https://github.com/caarlos0/up/blob/gh-pages/about/index.html):
+Well, that's about you, I would change it if I were you... OH WAIT!
+- [CNAME](https://github.com/caarlos0/up/blob/gh-pages/CNAME): If you're using
+this on GitHub Pages with a custom domain name, you might want to change this to be
+the domain you're going to use. All that should be in here is a
+domain name on the first line and nothing else (like: `example.com`).
+- [favicon.ico](https://github.com/caarlos0/up/blob/gh-pages/favicon.ico): This
+is a smaller version of my gravatar for use as the icon in your browser's
+address bar. You may change it to whatever you like. [Updating your icons][up-icons].
+- [apple-touch-icon.jpg](https://github.com/caarlos0/up/blob/gh-pages/apple-touch-icon.jpg):
+Again, this is my gravatar, and it shows up in iOS and various other apps
+that use this file as an "icon" for your site. [Updating your icons][up-icons].
+
+[up-icons]: https://github.com/caarlos0/up#update-favicon-and-apple-precomposed-icons-based-on-gravatar
+
+### Custom CSS/JS
+
+Assets are now managed by bower. You could simply run `grunt` whenever you
+want to update your assets. `grunt watch` will also watch everything for
+changes.
+
+Note: I'm not using any Jekyll asset pipeline because it's not supported
+by [GitHub Pages](http://pages.github.com), so, I prefer to do it by myself.
+
+
+### Update `favicon` and `apple-precomposed` icons based on gravatar
+
+First, be sure you have the author email configured in `_config.yml`,
+then, just run:
+
+```sh
+rake icons
+```
+
+The script will generate your email hash and get your gravatar, then, using
+RMagick, it will create all needed icons.
+
+
+## Deployment
+
+You should deploy with [GitHub Pages](http://pages.github.com)- it's just
+easier.
+
+All you should have to do is to rename your repository on GitHub to be
+`username.github.io`. Since this is a Jekyll project, you
+should be able to see your new site at <http://username.github.io>.
+
+## Licensing
+
+This is [MIT](https://github.com/caarlos0/up/blob/master/LICENSE) with no
+added caveats, therefore feel free to use this on your site without
+linking back to me or using a disclaimer or anything silly like that.
+
+If you'd like give [me](http://github.com/caarlos0),
+[holman](http://github.com/holman)
+(from [left](http://github.com/holman/left) layout),
+[plusjade](https://github.com/plusjade)
+(from [jekyll-bootstrap](https://github.com/plusjade/jekyll-bootstrap)),
+[fat](https://github.com/fat) and [mdo](https://github.com/mdo) (from
+[bootstrap](https://github.com/twitter/bootstrap)) credit somewhere on your
+all-new blog or tweet a shout out to us, well hey, sure we'll take it.
+
+## Donate
+
+You can also thank me doing a donation =)
+
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DXEJBUD2KYT7L)
+
+Thanks.
