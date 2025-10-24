@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Instalación de una tarjeta de video NVIDIA Geforce GTX680 en Openstack"
+title: "Virtualización de una tarjeta de video NVIDIA Geforce GTX680 en Openstack"
 categories: openstack
 author: "Jose A. Martinez"
 ---
